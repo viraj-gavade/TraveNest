@@ -1,0 +1,180 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Anti-AI Designer",
+    "mission": "Create a vibrant, editorial-style travel guide that feels like a high-end magazine, not a generic app."
+  },
+  "theme": {
+    "mode": "light",
+    "archetype": "Organic & Earthy",
+    "vibe": "Immersive, Exploratory, Cultural, Warm"
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "Playfair Display, serif",
+      "weights": ["400", "600", "700"],
+      "usage": "Main titles, destination names, editorial sections. Use tracking-tight for large sizes.",
+      "className": "font-serif tracking-tight"
+    },
+    "body": {
+      "fontFamily": "DM Sans, sans-serif",
+      "weights": ["400", "500", "700"],
+      "usage": "General text, descriptions, UI elements.",
+      "className": "font-sans"
+    },
+    "accent": {
+      "fontFamily": "Caveat, cursive",
+      "weights": ["400", "700"],
+      "usage": "Personal notes, 'Ask a Local' tips, handwritten annotations.",
+      "className": "font-handwriting"
+    }
+  },
+  "colors": {
+    "palette": {
+      "primary": {
+        "name": "Deep Ocean",
+        "hex": "#0F4C5C",
+        "tailwind": "bg-[#0F4C5C] text-white"
+      },
+      "secondary": {
+        "name": "Warm Sand",
+        "hex": "#FAFAF9",
+        "tailwind": "bg-[#FAFAF9] text-[#0F4C5C]"
+      },
+      "accent": {
+        "name": "Terracotta",
+        "hex": "#E36414",
+        "tailwind": "bg-[#E36414] text-white"
+      },
+      "neutral": {
+        "name": "Stone",
+        "hex": "#57534E",
+        "tailwind": "text-[#57534E]"
+      }
+    },
+    "backgrounds": {
+      "main": "bg-[#FAFAF9]",
+      "card": "bg-white",
+      "overlay": "bg-black/20 backdrop-blur-md"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-b from-black/40 to-transparent",
+      "forbidden": "No purple or teal gradients."
+    }
+  },
+  "layout": {
+    "spacing": {
+      "philosophy": "Generous. Use 2-3x standard spacing.",
+      "scale": ["p-4", "p-8", "p-12", "p-16", "p-24", "p-32"],
+      "containerPadding": "px-6 md:px-12 lg:px-24"
+    },
+    "grids": {
+      "marketing": "Mode A: Tetris Grid (Asymmetric, 12-col)",
+      "dashboard": "Mode B: High Density (Tight, 4-col)",
+      "bento": "Use for categories: Mix of square (1x1), tall (1x2), and wide (2x1) tiles."
+    },
+    "alignment": {
+      "text": "Left-aligned for readability. Center only for specific editorial impact.",
+      "containers": "No center-everything. Use offset layouts."
+    }
+  },
+  "components": {
+    "buttons": {
+      "style": "Pill-shaped or soft rounded (rounded-xl).",
+      "interaction": "Scale down slightly on click (active:scale-95). Hover lift (-translate-y-1).",
+      "shadows": "shadow-lg hover:shadow-xl transition-all duration-300"
+    },
+    "cards": {
+      "style": "Minimalist, white background, subtle border (border-stone-200).",
+      "hover": "Lift and shadow increase. Image zoom inside container.",
+      "glass": "Use glassmorphism for map overlays and floating navs."
+    },
+    "navigation": {
+      "style": "Floating dock or sticky glass header.",
+      "blur": "backdrop-blur-xl bg-white/70 border-b border-white/20"
+    },
+    "inputs": {
+      "style": "Shadcn Input with rounded-full for search bars. Minimal borders."
+    }
+  },
+  "visual_enhancers": {
+    "textures": "Subtle grain overlay on backgrounds to reduce digital flatness.",
+    "shadows": "Soft, diffuse shadows (shadow-[0_8px_30px_rgb(0,0,0,0.04)]).",
+    "borders": "1px solid borders with low opacity (border-black/5) for definition.",
+    "motion": {
+      "scroll": "Lenis smooth scrolling (if possible) or CSS scroll-behavior: smooth.",
+      "micro": "Hover states for all interactive elements.",
+      "entrance": "Staggered fade-in-up for lists."
+    }
+  },
+  "media": {
+    "images": {
+      "style": "High quality, editorial, authentic. No stock-photo look.",
+      "radius": "rounded-2xl or rounded-3xl",
+      "aspectRatios": "Mix of 4:3 (standard), 3:4 (portrait), 16:9 (cinematic)."
+    },
+    "icons": {
+      "library": "Lucide React (default), Phosphor Icons (for editorial feel).",
+      "style": "Thin stroke (1.5px), elegant."
+    }
+  },
+  "image_urls": {
+    "hero": {
+      "url": "https://images.unsplash.com/photo-1551423004-f6411656752d",
+      "alt": "Traveler exploring with map",
+      "category": "Hero"
+    },
+    "destinations": [
+      {
+        "url": "https://images.unsplash.com/photo-1661602715735-d401dafd3615",
+        "alt": "Santorini Architecture",
+        "category": "Attraction"
+      },
+      {
+        "url": "https://images.unsplash.com/photo-1661602715715-4db69e772aa3",
+        "alt": "Santorini Town View",
+        "category": "Attraction"
+      }
+    ],
+    "food": [
+      {
+        "url": "https://images.unsplash.com/photo-1741855900000-7c1cacddfeac",
+        "alt": "Kyoto Street Food",
+        "category": "Food"
+      }
+    ],
+    "hotels": [
+      {
+        "url": "https://images.unsplash.com/photo-1728051104444-96d997be70ab",
+        "alt": "Bali Luxury Resort",
+        "category": "Hotel"
+      }
+    ],
+    "culture": [
+      {
+        "url": "https://images.unsplash.com/photo-1758745464235-ccb8c1253074",
+        "alt": "Morocco Spice Market",
+        "category": "Culture"
+      }
+    ]
+  },
+  "instructions_to_main_agent": [
+    "Install necessary fonts: Playfair Display, DM Sans, Caveat via Google Fonts.",
+    "Update tailwind.config.js to include new colors and font families.",
+    "Create a 'Layout' component that handles the navigation and footer.",
+    "Implement the 'Hero' section with the traveler image and a parallax effect.",
+    "Build the 'Destination Overview' using a Bento Grid layout.",
+    "Use 'Leaflet' for the map, but style the markers and popup cards heavily.",
+    "Ensure all interactive elements have data-testid attributes.",
+    "Do NOT use generic 'Inter' font. Use the specified fonts.",
+    "Avoid purple/teal gradients. Use the Earthy/Ocean palette."
+  ],
+  "universal_guidelines": [
+    "Avoid generic 'AI slop' aesthetic.",
+    "Create depth through layered design elements.",
+    "Use glass-morphism effects with backdrop filters.",
+    "Every interaction needs micro-animations.",
+    "Use 2-3x more spacing than feels comfortable.",
+    "Subtle grain textures and noise overlays are encouraged."
+  ]
+}
